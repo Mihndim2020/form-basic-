@@ -5,6 +5,7 @@ class DriversController < ApplicationController
 
   def new
     @driver = Driver.new
+    @driver.build_license
   end
 
   def create 
@@ -17,6 +18,6 @@ class DriversController < ApplicationController
   end 
   private 
   def driver_params 
-    params.require(:driver).permit(:first_name, :last_name)
+    params.require(:driver).permit(:first_name, :last_name, license_attributes: [:number, :state] )
   end
 end

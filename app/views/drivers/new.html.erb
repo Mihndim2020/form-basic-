@@ -11,8 +11,11 @@
 
 <%= form.fields_for :license do |license_builder| %>
   <div>
-    <%= license_builder.label :number %> <br/>
+    <%= license_builder.label :number, 'Drivers License' %> <br/>
     <%= license_builder.text_field :number %> <br/>
+  </div> <br/>
+      <%= license_builder.label :state %> <br/>
+    <%= license_builder.text_field :state %> <br/>
   </div> <br/>
 <%end%>
 <%= form.submit %>
