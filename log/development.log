@@ -691,3 +691,272 @@ Completed 200 OK in 13ms (Views: 11.0ms | Allocations: 3544)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "drivers"[0m
   [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" ORDER BY "drivers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mDriver Load (0.8ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" ORDER BY "drivers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDriver Create (0.5ms)[0m  [1m[32mINSERT INTO "drivers" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Julius"], ["last_name", "Ndim"], ["created_at", "2021-04-09 21:10:39.045847"], ["updated_at", "2021-04-09 21:10:39.045847"]]
+  [1m[36mTRANSACTION (15.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDriver Load (1.1ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/drivers" for ::1 at 2021-04-09 17:11:12 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/drivers/index.html.erb:3
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3796)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 6853)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.6ms | Allocations: 8517)
+
+
+Started GET "/drivers" for ::1 at 2021-04-09 17:15:58 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/drivers/index.html.erb:3
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3928)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 6944)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 1.1ms | Allocations: 7990)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:17:38 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 976)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 3796)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 4388)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 17:17:55 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"Mih ", "last_name"=>"Elsie "}, "commit"=>"Create Driver"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+  [1m[36mDriver Create (4.8ms)[0m  [1m[32mINSERT INTO "drivers" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Mih "], ["last_name", "Elsie "], ["created_at", "2021-04-09 21:17:55.403678"], ["updated_at", "2021-04-09 21:17:55.403678"]]
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (15.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+Redirected to http://localhost:3000/drivers
+Completed 302 Found in 47ms (ActiveRecord: 20.3ms | Allocations: 4982)
+
+
+Started GET "/drivers" for ::1 at 2021-04-09 17:17:55 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 700)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 3536)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms | Allocations: 3990)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:18:13 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 686)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 3506)
+Completed 200 OK in 28ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 3961)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:18:14 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 686)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3506)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3961)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 17:18:29 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"MIh ", "last_name"=>"Melchy"}, "commit"=>"Create Driver"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+  [1m[36mDriver Create (2.0ms)[0m  [1m[32mINSERT INTO "drivers" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "MIh "], ["last_name", "Melchy"], ["created_at", "2021-04-09 21:18:29.166572"], ["updated_at", "2021-04-09 21:18:29.166572"]]
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (14.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+Redirected to http://localhost:3000/drivers
+Completed 302 Found in 39ms (ActiveRecord: 16.8ms | Allocations: 4399)
+
+
+Started GET "/drivers" for ::1 at 2021-04-09 17:18:29 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.1ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3552)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 4006)
+
+
+Started GET "/driversn/new" for ::1 at 2021-04-09 17:18:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/driversn/new"):
+  
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:18:55 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 686)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3506)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3962)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 17:19:01 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Create Driver"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+  [1m[36mDriver Create (3.0ms)[0m  [1m[32mINSERT INTO "drivers" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["created_at", "2021-04-09 21:19:01.237834"], ["updated_at", "2021-04-09 21:19:01.237834"]]
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drivers_controller.rb:12:in `create'
+Redirected to http://localhost:3000/drivers
+Completed 302 Found in 29ms (ActiveRecord: 17.7ms | Allocations: 3401)
+
+
+Started GET "/drivers" for ::1 at 2021-04-09 17:19:01 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 731)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3564)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 4017)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:19:03 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 686)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3511)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3966)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:20:32 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 686)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3506)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 3962)
+
+
+  [1m[36mDriver Load (0.6ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" ORDER BY "drivers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDriver Load (0.4ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" ORDER BY "drivers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDriver Destroy (0.4ms)[0m  [1m[31mDELETE FROM "drivers" WHERE "drivers"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (21.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" ORDER BY "drivers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDriver Load (0.5ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" ORDER BY "drivers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLicenses (20210409212750)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "licenses" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "number" varchar, "state" varchar, "driver_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210409212750"]]
+  [1m[36mTRANSACTION (20.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/drivers" for ::1 at 2021-04-09 17:41:40 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.3ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6135)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.3ms | Allocations: 8476)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:41:48 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3911)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3979)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4542)
+
+
+  
+ActionView::Template::Error (undefined method `number' for #<Driver id: nil, first_name: nil, last_name: nil, created_at: nil, updated_at: nil>):
+     9: <%= form.text_field :last_name %> <br/>
+    10: </div> <br/>
+    11: <%= form.label :number %> <br/>
+    12: <%= form.text_field :number %> <br/>
+    13: </div> <br/>
+    14: <%= form.submit %>
+    15: <%end%> 
+  
+app/views/drivers/new.html.erb:12
+app/views/drivers/new.html.erb:2
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:42:54 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1065)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 4122)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 5341)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:50:38 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2445)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2514)
+Completed 500 Internal Server Error in 13ms (Allocations: 3694)
+
+
+  
+ActionView::Template::Error (undefined method `field_for' for #<ActionView::Helpers::FormBuilder:0x00007f0a74ca1e50 @nested_child_index={}, @options={:html=>{:class=>"new_driver", :id=>"new_driver", :method=>:post, :authenticity_token=>nil}, :url=>"/drivers"}, @template=#<ActionView::Base:0x00000000018e70>, @object=#<Driver id: nil, first_name: nil, last_name: nil, created_at: nil, updated_at: nil>, @object_name="driver", @default_options={}, @default_html_options={}, @multipart=nil, @index=nil>
+Did you mean?  fields_for):
+     9: <%= form.text_field :last_name %> <br/>
+    10: </div> <br/>
+    11: 
+    12: <%= form.field_for :license do |license_builder| %>
+    13:   <div>
+    14:     <%= license_builder.label :number %> <br/>
+    15:     <%= license_builder.text_field :number %> <br/>
+  
+app/views/drivers/new.html.erb:12
+app/views/drivers/new.html.erb:2
+Started GET "/drivers/new" for ::1 at 2021-04-09 17:51:18 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 5051)
+Completed 200 OK in 17ms (Views: 15.2ms | Allocations: 6267)
+
+

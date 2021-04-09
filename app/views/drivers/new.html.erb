@@ -8,5 +8,12 @@
 <%= form.label :last_name %> <br/>
 <%= form.text_field :last_name %> <br/>
 </div> <br/>
+
+<%= form.fields_for :license do |license_builder| %>
+  <div>
+    <%= license_builder.label :number %> <br/>
+    <%= license_builder.text_field :number %> <br/>
+  </div> <br/>
+<%end%>
 <%= form.submit %>
 <%end%> 
