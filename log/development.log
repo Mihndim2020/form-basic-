@@ -230,3 +230,464 @@ Processing by DriversController#new as HTML
 Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 3574)
 
 
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:30:35 -0400
+Processing by DriversController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/drivers_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2923)
+Completed 200 OK in 26ms (Views: 10.6ms | ActiveRecord: 1.5ms | Allocations: 7783)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:43:43 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 40.7ms | Allocations: 7469)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 10430)
+Completed 200 OK in 58ms (Views: 54.1ms | Allocations: 11647)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:44:00 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 702)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3751)
+Completed 200 OK in 17ms (Views: 15.2ms | Allocations: 4967)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:44:01 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 503)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3324)
+Completed 200 OK in 19ms (Views: 17.7ms | Allocations: 3783)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:44:30 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 704)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3753)
+Completed 200 OK in 20ms (Views: 16.8ms | Allocations: 4964)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 14:44:33 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for DriversController
+Did you mean?  new
+               index):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:44:35 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 503)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 3331)
+Completed 200 OK in 24ms (Views: 22.1ms | Allocations: 3784)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:48:34 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 4007)
+Completed 200 OK in 20ms (Views: 18.5ms | Allocations: 5224)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:50:45 -0400
+Processing by DriversController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/drivers_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 820)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3677)
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 7479)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 14:50:48 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Create Driver"}
+No template found for DriversController#create, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms | Allocations: 1594)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:51:11 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 686)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 3506)
+Completed 200 OK in 38ms (Views: 33.3ms | ActiveRecord: 0.0ms | Allocations: 3961)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 14:51:13 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Create Driver"}
+No template found for DriversController#create, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:54:01 -0400
+Processing by DriversController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/drivers_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 820)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3677)
+Completed 200 OK in 22ms (Views: 11.4ms | ActiveRecord: 1.1ms | Allocations: 7791)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 14:54:03 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Create Driver"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 926)
+
+
+  
+ActionView::MissingTemplate (Missing template drivers/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mihndim/RoR/form-basic-/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actiontext-6.1.3.1/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.3.1/app/views"
+):
+  
+app/controllers/drivers_controller.rb:10:in `create'
+Started POST "/drivers" for ::1 at 2021-04-09 14:56:23 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Create Driver"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1051)
+
+
+  
+ActionView::MissingTemplate (Missing template drivers/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mihndim/RoR/form-basic-/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actiontext-6.1.3.1/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.3.1/app/views"
+):
+  
+app/controllers/drivers_controller.rb:10:in `create'
+Started POST "/drivers" for ::1 at 2021-04-09 14:56:30 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Create Driver"}
+Completed 500 Internal Server Error in 6ms (Allocations: 879)
+
+
+  
+ActionView::MissingTemplate (Missing template drivers/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mihndim/RoR/form-basic-/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actiontext-6.1.3.1/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.3.1/app/views"
+):
+  
+app/controllers/drivers_controller.rb:10:in `create'
+Started GET "/drivers/new" for ::1 at 2021-04-09 14:57:25 -0400
+Processing by DriversController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/drivers_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 820)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3644)
+Completed 200 OK in 65ms (Views: 11.8ms | ActiveRecord: 2.5ms | Allocations: 9475)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 14:57:33 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"jay", "last_name"=>"jat"}, "commit"=>"Create Driver"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 882)
+
+
+  
+ActionView::MissingTemplate (Missing template drivers/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mihndim/RoR/form-basic-/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actiontext-6.1.3.1/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.3.1/app/views"
+):
+  
+app/controllers/drivers_controller.rb:10:in `create'
+Started POST "/drivers" for ::1 at 2021-04-09 15:00:44 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"jay", "last_name"=>"jat"}, "commit"=>"Create Driver"}
+Completed 500 Internal Server Error in 2ms (Allocations: 1034)
+
+
+  
+ActionView::MissingTemplate (Missing template drivers/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/mihndim/RoR/form-basic-/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actiontext-6.1.3.1/app/views"
+  * "/home/mihndim/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/actionmailbox-6.1.3.1/app/views"
+):
+  
+app/controllers/drivers_controller.rb:10:in `create'
+Started POST "/drivers" for ::1 at 2021-04-09 15:01:53 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"jay", "last_name"=>"jat"}, "commit"=>"Create Driver"}
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/create.html.erb within layouts/application
+  Rendered drivers/create.html.erb within layouts/application (Duration: 1.7ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 3178)
+Completed 200 OK in 45ms (Views: 41.1ms | Allocations: 4386)
+
+
+Started GET "/drivers" for ::1 at 2021-04-09 15:13:18 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  Rendered drivers/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2985)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 3734)
+
+
+Started GET "/drivers" for ::1 at 2021-04-09 15:13:27 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  Rendered drivers/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 2870)
+Completed 200 OK in 31ms (Views: 27.1ms | Allocations: 3308)
+
+
+Started GET "/drivers/create" for ::1 at 2021-04-09 15:13:38 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for DriversController
+Did you mean?  new
+               create
+               index):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/drivers/index" for ::1 at 2021-04-09 15:13:51 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for DriversController
+Did you mean?  new
+               create
+               index):
+  
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/drivers/new" for ::1 at 2021-04-09 15:13:58 -0400
+Processing by DriversController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/drivers_controller.rb:6:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 983)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3749)
+Completed 200 OK in 30ms (Views: 11.4ms | ActiveRecord: 1.9ms | Allocations: 9706)
+
+
+Started POST "/drivers" for ::1 at 2021-04-09 15:14:01 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"", "last_name"=>""}, "commit"=>"Create Driver"}
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/create.html.erb within layouts/application
+  Rendered drivers/create.html.erb within layouts/application (Duration: 0.8ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 2871)
+Completed 200 OK in 34ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 3470)
+
+
+Started GET "/drivers" for ::1 at 2021-04-09 16:53:05 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  Rendered drivers/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2917)
+Completed 200 OK in 13ms (Views: 11.0ms | Allocations: 3544)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "drivers"[0m
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" ORDER BY "drivers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mDriver Load (0.8ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" ORDER BY "drivers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]

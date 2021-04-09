@@ -1,2 +1,12 @@
 <h1>Drivers#new</h1>
-<p>Find me in app/views/drivers/new.html.erb</p>
+<%= form_for @driver do |form|%>
+<div>
+<%= form.label :first_name %> <br/>
+<%= form.text_field :first_name %> <br/>
+</div> <br/>
+<div>
+<%= form.label :last_name %> <br/>
+<%= form.text_field :last_name %> <br/>
+</div> <br/>
+<%= form.submit %>
+<%end%> 
