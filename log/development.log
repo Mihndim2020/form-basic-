@@ -1441,3 +1441,192 @@ ActionView::Template::Error (undefined method `name' for #<Driver id: 1, first_n
   
 app/views/drivers/index.html.erb:4
 app/views/drivers/index.html.erb:3
+Started GET "/drivers" for ::1 at 2021-04-10 10:04:42 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/drivers/index.html.erb:3
+  [1m[36mDriver Load (0.3ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 22.1ms | Allocations: 7808)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 7877)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.8ms | Allocations: 9215)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `driver' for #<ActionView::Base:0x00000000022088>
+Did you mean?  @drivers):
+    5:  <%end%>
+    6:  
+    7:  <%= link_to "New Driver", new_driver_path %> 
+    8:  <%= liny_to "Delete", driver_path(driver), method: :delete, confirm: 'Are you sure ????'%>
+    9:  
+  
+app/views/drivers/index.html.erb:8
+Started GET "/drivers" for ::1 at 2021-04-10 10:04:44 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.3ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 31.6ms | Allocations: 4852)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 4920)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.3ms | Allocations: 5336)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `driver' for #<ActionView::Base:0x00000000022358>
+Did you mean?  @drivers):
+    5:  <%end%>
+    6:  
+    7:  <%= link_to "New Driver", new_driver_path %> 
+    8:  <%= liny_to "Delete", driver_path(driver), method: :delete, confirm: 'Are you sure ????'%>
+    9:  
+  
+app/views/drivers/index.html.erb:8
+Started GET "/drivers/new" for ::1 at 2021-04-10 10:04:47 -0400
+Processing by DriversController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/new.html.erb within layouts/application
+  Rendered drivers/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3988)
+Completed 200 OK in 44ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 8345)
+
+
+Started POST "/drivers" for ::1 at 2021-04-10 10:04:50 -0400
+Processing by DriversController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "driver"=>{"first_name"=>"Mih", "last_name"=>"Prisca ", "license_attributes"=>{"number"=>"8787", "state"=>"Bda"}}, "commit"=>"Create Driver"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/drivers_controller.rb:13:in `create'
+  [1m[36mDriver Create (1.3ms)[0m  [1m[32mINSERT INTO "drivers" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Mih"], ["last_name", "Prisca "], ["created_at", "2021-04-10 14:04:50.057648"], ["updated_at", "2021-04-10 14:04:50.057648"]]
+  ↳ app/controllers/drivers_controller.rb:13:in `create'
+  [1m[36mLicense Create (0.6ms)[0m  [1m[32mINSERT INTO "licenses" ("number", "state", "driver_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["number", "8787"], ["state", "Bda"], ["driver_id", 10], ["created_at", "2021-04-10 14:04:50.082665"], ["updated_at", "2021-04-10 14:04:50.082665"]]
+  ↳ app/controllers/drivers_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (17.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/drivers_controller.rb:13:in `create'
+Redirected to http://localhost:3000/drivers
+Completed 302 Found in 73ms (ActiveRecord: 19.4ms | Allocations: 6354)
+
+
+Started GET "/drivers" for ::1 at 2021-04-10 10:04:50 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 4873)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 4941)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms | Allocations: 5357)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `driver' for #<ActionView::Base:0x000000000227e0>
+Did you mean?  @drivers):
+    5:  <%end%>
+    6:  
+    7:  <%= link_to "New Driver", new_driver_path %> 
+    8:  <%= liny_to "Delete", driver_path(driver), method: :delete, confirm: 'Are you sure ????'%>
+    9:  
+  
+app/views/drivers/index.html.erb:8
+Started GET "/drivers" for ::1 at 2021-04-10 10:05:17 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.1ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 5059)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 5128)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms | Allocations: 6307)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `driver' for #<ActionView::Base:0x00000000022b50>
+Did you mean?  @drivers):
+    5:  <%end%>
+    6:  
+    7:  <%= link_to "New Driver", new_driver_path %> 
+    8:  <%= link_to "Delete", driver_path(driver), method: :delete, confirm: 'Are you sure ????'%>
+    9:  
+  
+app/views/drivers/index.html.erb:8
+Started GET "/drivers" for ::1 at 2021-04-10 10:15:00 -0400
+  
+SyntaxError (/home/mihndim/RoR/form-basic-/app/controllers/drivers_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/drivers_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/drivers_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/drivers_controller.rb:27: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/drivers" for ::1 at 2021-04-10 10:15:16 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/drivers/index.html.erb:3
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 27.5ms | Allocations: 7814)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 7883)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.5ms | Allocations: 9191)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `driver' for #<ActionView::Base:0x000000000250d0>
+Did you mean?  @drivers):
+    5:  <%end%>
+    6:  
+    7:  <%= link_to "New Driver", new_driver_path %> 
+    8:  <%= link_to "Delete", driver_path(driver), method: :delete, confirm: 'Are you sure ????'%>
+    9:  
+  
+app/views/drivers/index.html.erb:8
+Started GET "/drivers" for ::1 at 2021-04-10 10:16:55 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4127)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.2ms | Allocations: 5344)
+
+
+Started DELETE "/drivers/%23%3CDriver::ActiveRecord_Relation:0x0000560660fecbc8%3E" for ::1 at 2021-04-10 10:17:02 -0400
+Processing by DriversController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"#<Driver::ActiveRecord_Relation:0x0000560660fecbc8>"}
+  [1m[36mDriver Load (11.3ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" WHERE "drivers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/drivers_controller.rb:20:in `destroy'
+Completed 404 Not Found in 25ms (ActiveRecord: 11.3ms | Allocations: 3455)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Driver with 'id'=#<Driver::ActiveRecord_Relation:0x0000560660fecbc8>):
+  
+app/controllers/drivers_controller.rb:20:in `destroy'
+Started GET "/drivers" for ::1 at 2021-04-10 10:17:05 -0400
+Processing by DriversController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.5ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  ↳ app/views/drivers/index.html.erb:3
+  Rendered drivers/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 3688)
+Completed 200 OK in 36ms (Views: 30.5ms | ActiveRecord: 0.5ms | Allocations: 4142)
+
+
+Started DELETE "/drivers/%23%3CDriver::ActiveRecord_Relation:0x00007f0a74032d40%3E" for ::1 at 2021-04-10 10:17:08 -0400
+Processing by DriversController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"#<Driver::ActiveRecord_Relation:0x00007f0a74032d40>"}
+  [1m[36mDriver Load (0.5ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers" WHERE "drivers"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/drivers_controller.rb:20:in `destroy'
+Completed 404 Not Found in 16ms (ActiveRecord: 0.5ms | Allocations: 1138)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Driver with 'id'=#<Driver::ActiveRecord_Relation:0x00007f0a74032d40>):
+  
+app/controllers/drivers_controller.rb:20:in `destroy'
