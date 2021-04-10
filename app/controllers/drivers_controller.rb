@@ -2,10 +2,6 @@ class DriversController < ApplicationController
   def index
     @drivers = Driver.all
   end
-  
-  def name 
-    [first_name, last_name].join(' ')
-  end
 
   def new
     @driver = Driver.new
